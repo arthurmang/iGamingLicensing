@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurisdictions | iGaming Licensing</title>
+    
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="jurisdictions">
+    
+    <!-- Header  -->
+
+    <section id="header">
+
+        <nav class="header container">
+
+            <div class="mobile-nav">
+
+                <div class="relative left-4 w-32 md:w-44 lg:w-56 lg:left-8">
+                    <a href="./index.html"><img src="../img/iGamingLicensing.svg" alt="" class="w-full"></a>
+                </div>
+
+                <div class="mobile-navigation">
+                    <button class="hamburger" onclick="showNav()">
+                        <div class="bar one"></div>
+                        <div class="bar two"></div>
+                        <div class="bar three"></div>
+                    </button>
+
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html" class="hidden">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./jurisdictions.html">Jurisdictions</a></li>
+                            <li><a href="./recommendations.html">Our Recommendations</a></li>
+                            <li><a href="./news.html">News & Content</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </section>
+
+    <!-- End Header  -->
+
+    <!-- Jurisdictions Section -->
+
+    <section id="jurisdictions" class="my-20">
+
+        <div class="min-h-screen flex flex-col md:flex-row">
+
+            <div class="flex items-center justify-between p-4 z-50 md:border-b md:hidden">
+                <h1 class="text-3xl font-bold">Jurisdictions</h1>
+                <button id="menu-toggle" class="p-2" aria-label="Open menu">
+                    <svg id="dropdownArrow" class="w-5 h-5 ml-2 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="sidebar" class="w-full p-4 bottom-0 left-0 z-40 md:w-72 md:block md:p-10 md:relative xl:w-80" style="background: #FFF;">
+                <h2 class="text-2xl font-bold mb-6 md:block hidden md:text-3xl lg:text-4xl">Jurisdictions</h2>
+                <ul id="jurisdiction-list" class="space-y-3 md:border-r">
+                    <li data-country="Alderney" class="jurisdiction-place">Alderney</li>
+                    <li data-country="Anjouan" class="jurisdiction-place">Anjouan</li>
+                    <li data-country="Curaçao" class="jurisdiction-place">Curaçao</li>
+                    <li data-country="Isle of Man" class="jurisdiction-place">Isle of Man</li>
+                    <li data-country="Kahnawake" class="jurisdiction-place">Kahnawake</li>
+                    <li data-country="Malta" class="jurisdiction-place">Malta</li>
+                    <li data-country="Nevis" class="jurisdiction-place">Nevis</li>
+                    <li data-country="Ontario" class="jurisdiction-place">Ontario</li>
+                    <li data-country="Republic of Ireland" class="jurisdiction-place">Republic of Ireland</li>
+                    <li data-country="Romania" class="jurisdiction-place">Romania</li>
+                    <li data-country="Tobique" class="jurisdiction-place">Tobique</li>
+                    <li data-country="United Arab Emirates" class="jurisdiction-place">United Arab Emirates</li>
+                    <li data-country="United Kingdom" class="jurisdiction-place">United Kingdom</li>
+                </ul>
+            </div>
+
+            <div id="jur-content" class="flex-1 flex flex-col gap-8 p-6 md:p-10 md:pl-0 lg:grid lg:grid-cols-3 xl:flex xl:flex-row">
+
+                <div class="max-w-xs mx-auto md:col-span-1 md:ml-0 xl:w-md xl:shrink-0 xl:mx-6">
+                    <img id="jurisdiction-image" src="" alt="Jurisdiction" class="w-full h-auto object-cover">
+                </div>
+
+                <div class="md:col-span-2 xl:max-w-2xl">
+                    <h3 id="jurisdiction-name" class="text-2xl font-bold mb-4"></h3>
+                    <p id="jurisdiction-description" class="mb-6"></p>
+
+                    <div class="space-y-4">
+                        <p>
+                            <span class="font-bold text-primary">iGaming Licensing Services:</span><br>
+                            <span id="jurisdiction-services" class="primary-text font-semibold"></span>
+                        </p>
+                        <p>
+                            <span class="font-semibold">Regulator:</span><br>
+                            <span id="jurisdiction-regulator"></span>
+                        </p>
+                        <p>
+                            <span class="font-semibold">Overview:</span><br>
+                            <span id="jurisdiction-overview"></span>
+                        </p>
+                        <p>
+                            <span class="font-semibold">Indicative government/licence fees:</span><br>
+                            <span id="jurisdiction-fees"></span>
+                        </p>
+                        <p>
+                            <span class="font-semibold">Our recommendation:</span><br>
+                            <span id="jurisdiction-recommendations"></span>
+                        </p>
+                        <p>
+                            <span class="font-semibold">Important to know:</span><br>
+                            <span id="jurisdiction-important"></span>
+                        </p>
+                        <p>
+                            <span class="font-semibold">Benefits:</span><br>
+                            <span id="jurisdiction-benefits"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End Jurisdictions Section -->
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="px-4 lg:pb-8 xl:pt-10 xl:pb-14">
+
+        <div class="py-10 flex flex-col lg:flex-row xl:max-w-7xl xl:mx-auto">
+            
+            <div class="flex flex-col text-center space-y-4 max-w-lg mx-auto lg:max-w-sm lg:text-left lg:w-1/2 lg:mr-0 xl:w-1/3">
+                <h3 class="pb-2 text-2xl md:text-3xl lg:text-4xl">Contact us</h3>
+                <p>
+                    Get in touch with us to enquire about acquiring an iGaming license in your jurisdiction of choice.
+                </p>
+                <p>
+                    If you would like add some additional information or ask a specific question, feel free to do so in the information field, this can help us get you started even sooner.
+                </p>
+            </div>
+
+            <div class="mt-6 lg:w-1/2 xl:w-2/3">
+
+                <form action="" class="flex flex-col items-center justify-center max-w-md mx-auto xl:flex-row xl:max-w-2xl xl:items-start">
+
+                    <div class="w-full flex flex-col space-y-4 xl:pr-12">
+
+                        <div class="flex flex-col">
+                            <label for="Name" class="pb-2">Name</label>
+                            <input type="text" name="Name" placeholder="Joe Bloggs">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="Email" class="pb-2">Email</label>
+                            <input type="text" name="Email" placeholder="joebloggs@gmail.com">
+                        </div>
+                        
+                        <div class="flex flex-col">
+                            <label for="Jurisdiction" class="pb-2">Jurisdiction (optional)</label>
+                            <select name="Jurisdiction" id="jurisdiction-select">
+                                <option value=""></option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col items-center w-full mt-2 xl:mt-0">
+
+                        <div class="flex flex-col w-full">
+                            <label for="Info" class="pb-2">Information (optional)</label>
+                            <textarea name="Info" id="contact-msg" style="resize: none;"></textarea>
+                        </div>
+
+                        <div class="flex items-center mt-6 xl:pt-4">
+                            <button type="submit" class="contact-button mx-auto">Send</button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End Contact Section -->
+
+    <!-- Footer Section  -->
+        
+    <section id="footer" class="w-full pt-8 p-4 max-h-max lg:pt-4">
+
+        <div class="grid grid-rows-3 items-center justify-center text-sm text-center md:flex md:flex-row md:justify-between lg:px-4">
+
+            <div class="row-start-2">
+                <a href="/privacy-policy" class="font-semibold">Privacy Policy</a>
+            </div>
+
+            <div class="row-start-3">
+                <p><a href="www.themf.agency" class="font-semibold mf-link">Website by MF Agency</a></p>
+            </div>
+
+            <div class="row-start-1 mx-auto mb-2 md:mx-0 md:mb-0">
+                <a href="https://www.linkedin.com/company/themf-agency/"><img src="../img/linkedin-icon.svg" alt="iGaming Licensing LinkedIn"></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End Footer Section  -->
+     
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const country = params.get("country");
+
+            if (country) {
+                updateJurisdiction(country);
+            }
+        });
+    </script>
+</body>
+</html>

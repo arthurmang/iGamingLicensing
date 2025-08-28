@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGaming Licensing</title>
+    
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header  -->
+
+    <section id="header">
+
+        <nav class="header container">
+
+            <div class="mobile-nav">
+
+                <div class="relative left-4 w-32 md:w-44 lg:w-56 lg:left-8">
+                    <a href="./index.html"><img src="../img/iGamingLicensing.svg" alt="" class="w-full"></a>
+                </div>
+
+                <div class="mobile-navigation">
+                    <button class="hamburger" onclick="showNav()">
+                        <div class="bar one"></div>
+                        <div class="bar two"></div>
+                        <div class="bar three"></div>
+                    </button>
+
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html" class="hidden">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./jurisdictions.html">Jurisdictions</a></li>
+                            <li><a href="./recommendations.html">Our Recommendations</a></li>
+                            <li><a href="./news.html">News & Content</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </section>
+
+    <!-- End Header  -->
+
+    <!-- Recommendations Section -->
+
+    <section id="recommendations" class="px-4 mt-24 max-w-7xl mx-auto lg:pt-14">
+
+        <div class="flex flex-col-reverse items-center justify-center lg:flex-row-reverse lg:justify-start">
+
+            <div class="w-82 mx-auto pt-8 sm:w-96 lg:w-1/3 lg:pt-0 xl:w-1/2">
+                <img src="../img/recommendations-hero.png" alt="iGaming Licensing Team" class="mx-auto xl:max-w-lg">
+            </div>
+
+            <div class="flex flex-col space-y-6 mx-auto text-center w-full mx-auto lg:w-1/2 lg:text-left">
+                <h1 class="text-center text-3xl sm:text-4xl lg:text-left lg:text-5xl">Our Recommendations</h1>
+                <p>
+                    Our Recommendations Page has been created to share our professional view on which licence may be best suited to your business and long-term goals. We understand that every business is unique, with its own objectives, structures, and target markets, and therefore requires licences for different purposes.
+                </p>
+                <p>
+                    In some cases, you may not require a licence at all. Our role is to provide you with clear, tailored advice so you can make informed decisions that balance compliance, cost-efficiency, and commercial opportunity.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="mobile-table w-full my-10 md:hidden">
+            <img src="../img/recommendations-table.png" alt="Licence Recommendations" class="clickable-image">
+        </div>
+        
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+
+        <div class="hidden container mx-auto my-16 max-w-6xl mx-auto md:block lg:mt-20 xl:max-w-7xl">
+
+            <table class="min-w-full bg-white border">
+
+                <thead class="text-center">
+                    <tr class="text-lg font-semibold md:text-xl lg:text-2xl">
+                        <th class="p-2 text-center lg:px-6 lg:py-4">Licence Type</th>
+                        <th class="p-2 lg:px-6 lg:py-4">Business to Business<br>("B2B")</th>
+                        <th class="p-2 lg:px-6 lg:py-4">Business to Customer<br>("B2C")</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="border-b">
+                        <td class="p-2 text-center lg:px-6 lg:py-4 text-lg font-semibold lg:text-xl">Low-Cost Licence</td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Anjouan
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Low setup and ongoing costs, and the licence can be obtained within six weeks.
+                            </div>
+                        </td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Anjouan
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Low setup and ongoing costs, and the licence can be obtained within six weeks.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b">
+                        <td class="p-2 text-center lg:px-6 lg:py-4 text-lg font-semibold lg:text-xl">Tier One Licence</td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Isle of Man
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Resell premium content from suppliers such as Evolution and offer content to regulated .com markets with no barriers.
+                            </div>
+                        </td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Isle of Man or Malta
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Malta for EU-facing markets
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Isle of Man for outward-facing markets
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b">
+                        <td class="p-2 text-center lg:px-6 lg:py-4 text-lg font-semibold lg:text-xl">Taxation Efficiency</td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Isle of Man Entity (without a licence)
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> A software supplier licence is not mandatory to distribute software from an Isle of Man entity, and you can benefit from 0% tax.
+                            </div>
+                        </td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Tobique/Kahnawake Licence using an Isle of Man entity
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> No gaming duty or corporate taxes payable
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b">
+                        <td class="p-2 text-center lg:px-6 lg:py-4 text-lg font-semibold lg:text-xl">Reputable Licence</td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Isle of Man
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Resell premium content from suppliers such as Evolution and offer content to regulated .com markets with no barriers.
+                            </div>
+                        </td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Kahnawake/Tobique
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> A reputable licence with access to banking and payments.
+                            </div>
+                        </td>
+                    </tr>
+                     
+                    <tr class="border-b">
+                        <td class="p-2 text-center lg:px-6 lg:py-4 text-lg font-semibold lg:text-xl">Regulated Markets (Malta)</td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Obtain a Romanian Class II Licence and obtain MGA Recognition Certificate
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Quicker route to market to supply to MGA licence holders.
+                            </div>
+                        </td>
+                        <td class="p-2 lg:px-6 lg:py-4"></td>
+                    </tr>
+
+                    <tr class="border-b">
+                        <td class="p-2 text-center lg:px-6 lg:py-4 text-lg font-semibold lg:text-xl">Regulated Markets (United Kingdom and Ontario)</td>
+                        <td class="p-2 lg:px-6 lg:py-4">
+                            <div>
+                                <span class="font-semibold text-primary break-all block">Our recommendation:</span> Establish an Isle of Man company to obtain a United Kingdom or Ontario Licence.
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-primary block">Why:</span> Tax efficiency (0% corporate tax) and ring-fencing prestigious licences from other business activities.
+                            </div>
+                        </td>
+                        <td class="p-2 lg:px-6 lg:py-4"></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- End Recommendations Section -->
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="px-4 lg:pb-8 xl:pt-10 xl:pb-14">
+
+        <div class="py-10 flex flex-col lg:flex-row xl:max-w-7xl xl:mx-auto">
+            
+            <div class="flex flex-col text-center space-y-4 max-w-lg mx-auto lg:max-w-sm lg:text-left lg:w-1/2 lg:mr-0 xl:w-1/3">
+                <h3 class="pb-2 text-2xl md:text-3xl lg:text-4xl">Contact Us</h3>
+                <p>
+                    Get in touch with us to enquire about acquiring an iGaming licence in your jurisdiction of choice.
+                </p>
+                <p>
+                    If you would like add some additional information or ask a specific question, feel free to do so in the information field, this can help us get you started even sooner.
+                </p>
+            </div>
+
+            <div class="mt-6 lg:w-1/2 xl:w-2/3">
+
+                <form action="" class="flex flex-col items-center justify-center max-w-md mx-auto xl:flex-row xl:max-w-2xl xl:items-start">
+
+                    <div class="w-full flex flex-col space-y-4 xl:pr-12">
+
+                        <div class="flex flex-col">
+                            <label for="Name" class="pb-2">Name</label>
+                            <input type="text" name="Name" placeholder="Joe Bloggs">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="Email" class="pb-2">Email</label>
+                            <input type="text" name="Email" placeholder="joebloggs@gmail.com">
+                        </div>
+                        
+                        <div class="flex flex-col">
+                            <label for="Jurisdiction" class="pb-2">Jurisdiction (optional)</label>
+                            <select name="Jurisdiction" id="jurisdiction-select">
+                                <option value="" disabled selected>- Select -</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col items-center w-full mt-2 xl:mt-0">
+
+                        <div class="flex flex-col w-full">
+                            <label for="Info" class="pb-2">Information (optional)</label>
+                            <textarea name="Info" id="contact-msg" style="resize: none;"></textarea>
+                        </div>
+
+                        <div class="flex items-center mt-6 xl:pt-4">
+                            <button type="submit" class="contact-button mx-auto">Send</button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End Contact Section -->
+
+    <!-- Footer Section  -->
+        
+        <section id="footer" class="w-full pt-8 p-4 max-h-max lg:pt-4">
+
+            <div class="grid grid-rows-3 items-center justify-center text-sm text-center md:flex md:flex-row md:justify-between lg:px-4">
+
+                <div class="row-start-2">
+                    <a href="/privacy-policy" class="font-semibold">Privacy Policy</a>
+                </div>
+
+                <div class="row-start-3">
+                    <p><a href="www.themf.agency" class="font-semibold mf-link">Website by MF Agency</a></p>
+                </div>
+
+                <div class="row-start-1 mx-auto mb-2 md:mx-0 md:mb-0">
+                    <a href="https://www.linkedin.com/company/themf-agency/"><img src="../img/linkedin-icon.svg" alt="iGaming Licensing LinkedIn"></a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- End Footer Section  -->
+
+    <script src="script.js"></script>
+</body>
+</html>

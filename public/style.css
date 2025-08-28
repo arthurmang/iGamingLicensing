@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* General Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+    color: #000;
+}
+
+/* body {
+    background-color: #0F0F0F;
+} */
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a:hover {
+    color: #1FDAE1;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, select {
+    color: #000;
+    padding: 5px 7px;
+    height: 35px;
+    background-color: #23C9CF;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+textarea {
+    color: #000;
+    padding: 5px 7px;
+    height: 80px;
+    background-color: #23C9CF;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.text-primary {
+    color:#1FDAE1;
+}
+
+.primary-button {
+    background-color: #1FDAE1;
+    color: #0F0F0F;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    border-radius: 25px;
+    min-width: 145px;
+    transition: all 0.3s ease;
+}
+
+.secondary-button {
+    background-color: #FFF;
+    border: 2px solid #1FDAE1;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    border-radius: 25px;
+    min-width: 145px;
+    transition: all 0.3s ease;
+}
+
+.primary-button:hover, .secondary-button:hover {
+    background-color: #23C9CF;
+    color: #000;
+}
+
+.secondary-button:hover {
+    border-color: #23C9CF;
+}
+
+/* Hamburger Nav */
+
+.mobile-nav {
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mobile-nav.scrolled {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.mobile-navigation {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF;
+    transition: 0.5s;
+    padding-top: 3.5rem;
+    z-index: 1000;
+}
+
+.mobile-navigation ul li {
+    text-align: right;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    width: 100%;
+    margin-right: 0;
+    place-self: end;
+}
+
+.hamburger, .bar {
+    position: fixed;
+}
+
+.hamburger {
+    display: block;
+    top: 35px;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar {
+    top: 3px;
+    background: #000;
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+.two {
+    top: 11px;
+}
+
+.three {
+    top: 19px;
+}
+
+.mobile-navigation.active {
+    right: 0;
+}
+
+.hamburger.open .bar.one {
+    background-color: #000;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open .bar.two {
+    background-color: transparent;
+}
+
+.hamburger.open .bar.three {
+    background-color: #000;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.nav-links {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.mobile-navigation .jur-panel {
+    background: #F2F2F2;
+    border: 1px solid #AAAAAA;
+    border-radius: 10px 0 10px 10px;
+    padding: 8px 0;
+    right: 0;
+}
+
+.mobile-navigation .jur-panel-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 5px;
+    padding: 10px;
+    width: 20rem;
+}
+
+.mobile-navigation .jur-panel-list li {
+    text-align: center;
+}
+
+/* End Hamburger Nav */
+
+/* Hero Section */
+
+#hero {
+    background-image: url('../img/homepage-bg.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.igaming-span {
+    font-size: 3.5rem;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #1FDAE1;
+    line-height: 1;
+}
+
+.licensing-span {
+    font-size: 1.7rem;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-top:10px;
+}
+
+/* End Hero Section */
+
+/* Contact Section */
+
+#contact {
+    background-color: #1FDAE1;
+}
+
+.contact-button {
+    border: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    width: 145px;
+}
+
+.contact-button:hover {
+    border-color: #FFF;
+    color: #FFF;
+}
+
+#contact label {
+    font-weight: 600;
+}
+
+/* End Contact Section */
+
+/* Footer Section */
+
+#footer a img {
+    filter: contrast(0) brightness(0);
+}
+
+#footer a:hover img {
+    filter: invert(15%) sepia(32%) saturate(2112%) hue-rotate(133deg) brightness(94%) contrast(87%);
+}
+
+.mf-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* End Footer Section */
+
+/* About Page */
+
+#about {
+    background-image: url('../img/about-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 20%;
+}
+
+/* End About Page */
+
+/* Jurisdictions Page */
+
+.jurisdiction-place {
+    cursor: pointer;
+    color: #AAAAAA;
+    font-weight: 500;
+}
+
+.jurisdiction-place:hover {
+    color: #1FDAE1;
+    font-weight: 600;
+}
+
+.jurisdiction-place.active {
+    font-weight: 700;
+    color: #1FDAE1;
+}
+
+.jurisdiction-place.active:hover {
+    font-weight: 700;
+}
+
+
+/* End Jurisdictions Page */
+
+/* Recommendations Page */
+
+tr, th, td {
+    border: 1px solid rgb(229, 231, 235);
+}
+
+td div {
+    font-weight: 500;
+}
+
+.clickable-image {
+    width: 100%;  
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;  
+}
+
+.clickable-image:hover {
+    transform: scale(1.05);  
+}
+
+.modal {
+    display: none;  
+    position: fixed;
+    z-index: 1;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;  
+    max-width: 800px;  
+}
+
+.close {
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* End Recommendations Page */
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .igaming-span {
+        font-size: 4.5rem;
+    }
+    .licensing-span {
+        font-size: 2rem;
+    }
+    #jur-content {
+        padding-top: 6.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+    .mobile-nav {
+        justify-content: space-between;
+    }
+    .mobile-navigation {
+        position: unset;
+        right: unset;
+        background-color: transparent;
+        padding-top: 0;
+    }
+    .mobile-navigation nav {
+        height: 100%;
+        padding-right: 1rem;
+    }
+    .mobile-navigation ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .mobile-navigation ul li {
+        font-size: 0.95rem;
+        place-self: center;
+        padding: 0 15px;
+        width: unset;
+    }
+    .jur-nav:hover .jur-panel {
+        display: block!important;
+    }
+    .igaming-span {
+        font-size: 5.5rem;
+        font-weight: 600;
+    }
+    .licensing-span {
+        font-size: 2.5rem;
+    }
+    #about {
+        background-position: right top;
+        background-size: 70%;
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    textarea {
+        height: 118px;
+    }
+    .mobile-nav {
+        height: 5.5rem;
+    }
+    #about {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    #hero {
+        /* padding-top: 7.5rem; */
+        padding-bottom: 6.5rem;
+    }
+    .igaming-span {
+        font-size: 6.5rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    #hero .igaming-span {
+        font-size: 7.5rem;
+    }
+    #hero .licensing-span {
+        font-size: 3rem;
+    }
+    #hero h1 {
+        font-size: 4.2rem;
+    }
+    #hero-left {
+        padding-top: 3rem;
+        width: 50%;
+    }
+}
+
+/* End Media Queries */
