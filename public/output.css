@@ -935,6 +935,10 @@ video {
   width: 1.25rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1002,6 +1006,10 @@ video {
 
 .shrink {
   flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -1330,10 +1338,6 @@ video {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1562,6 +1566,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2270,11 +2280,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2285,10 +2290,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-normal {
-  font-weight: 400;
 }
 
 .uppercase {
@@ -2870,14 +2871,6 @@ video {
     width: 18rem;
   }
 
-  .md\:max-w-none {
-    max-width: none;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2904,12 +2897,12 @@ video {
     padding: 2.5rem;
   }
 
-  .md\:pt-4 {
-    padding-top: 1rem;
-  }
-
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:pt-4 {
+    padding-top: 1rem;
   }
 
   .md\:text-3xl {
@@ -2946,6 +2939,10 @@ video {
     margin-left: 0px;
   }
 
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
   .lg\:ml-auto {
     margin-left: auto;
   }
@@ -2954,32 +2951,16 @@ video {
     margin-right: 0px;
   }
 
-  .lg\:mr-16 {
-    margin-right: 4rem;
-  }
-
   .lg\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .lg\:mt-16 {
-    margin-top: 4rem;
   }
 
   .lg\:mt-20 {
     margin-top: 5rem;
   }
 
-  .lg\:ml-14 {
-    margin-left: 3.5rem;
-  }
-
   .lg\:grid {
     display: grid;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:w-1\/2 {
@@ -2990,8 +2971,8 @@ video {
     width: 33.333333%;
   }
 
-  .lg\:w-48 {
-    width: 12rem;
+  .lg\:w-14 {
+    width: 3.5rem;
   }
 
   .lg\:w-56 {
@@ -3000,6 +2981,14 @@ video {
 
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
+  .lg\:w-12 {
+    width: 3rem;
   }
 
   .lg\:max-w-5xl {
@@ -3026,10 +3015,6 @@ video {
     flex-direction: row-reverse;
   }
 
-  .lg\:items-start {
-    align-items: flex-start;
-  }
-
   .lg\:items-center {
     align-items: center;
   }
@@ -3040,10 +3025,6 @@ video {
 
   .lg\:justify-around {
     justify-content: space-around;
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
   }
 
   .lg\:gap-x-16 {
@@ -3061,11 +3042,6 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-  }
-
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:px-4 {
@@ -3138,24 +3114,14 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .xl\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .xl\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
   .xl\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .xl\:mb-16 {
@@ -3166,8 +3132,8 @@ video {
     margin-left: 0px;
   }
 
-  .xl\:mr-24 {
-    margin-right: 6rem;
+  .xl\:ml-20 {
+    margin-left: 5rem;
   }
 
   .xl\:mt-0 {
@@ -3176,10 +3142,6 @@ video {
 
   .xl\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .xl\:ml-20 {
-    margin-left: 5rem;
   }
 
   .xl\:flex {
@@ -3196,10 +3158,6 @@ video {
 
   .xl\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .xl\:w-52 {
-    width: 13rem;
   }
 
   .xl\:w-80 {
@@ -3222,10 +3180,6 @@ video {
     max-width: 28rem;
   }
 
-  .xl\:max-w-none {
-    max-width: none;
-  }
-
   .xl\:shrink-0 {
     flex-shrink: 0;
   }
@@ -3240,11 +3194,6 @@ video {
 
   .xl\:justify-center {
     justify-content: center;
-  }
-
-  .xl\:gap-x-24 {
-    -moz-column-gap: 6rem;
-         column-gap: 6rem;
   }
 
   .xl\:gap-x-36 {
@@ -3274,12 +3223,12 @@ video {
     padding-top: 2.5rem;
   }
 
-  .xl\:pt-4 {
-    padding-top: 1rem;
-  }
-
   .xl\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .xl\:pt-4 {
+    padding-top: 1rem;
   }
 
   .xl\:text-3xl {

@@ -1,9 +1,1 @@
-{ 
-  "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.17"
-  }
-}
+{"scripts":{"dev":"npx tailwindcss -i ./src/input.css -o ./public/output.css --watch","build":"tailwindcss -i ./src/input.css -o ./public/output.css --minify"},"devDependencies":{"tailwindcss":"^3.4.17"}}
