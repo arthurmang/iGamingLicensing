@@ -58,6 +58,7 @@ textarea {
     color: #0F0F0F;
     padding: 0.75rem 1.25rem;
     font-weight: 600;
+    border: 2px solid #000;
     border-radius: 25px;
     min-width: 145px;
     transition: all 0.3s ease;
@@ -73,13 +74,12 @@ textarea {
     transition: all 0.3s ease;
 }
 
-.primary-button:hover, .secondary-button:hover {
-    background-color: #23C9CF;
-    color: #000;
+.primary-button:hover {
+    color: #FFF;
 }
 
 .secondary-button:hover {
-    border-color: #23C9CF;
+    color: #1FDAE1;
 }
 
 /* Hamburger Nav */
@@ -106,7 +106,6 @@ textarea {
     right: -100%;
     top: 0;
     width: 100%;
-    height: 100vh;
     background-color: #FFF;
     transition: 0.5s;
     padding-top: 3.5rem;
@@ -156,6 +155,7 @@ textarea {
 }
 
 .mobile-navigation.active {
+    height: 100vh;
     right: 0;
 }
 
@@ -286,13 +286,6 @@ textarea {
 /* End Footer Section */
 
 /* About Page */
-
-#about {
-    background-image: url('../img/about-bg.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 20%;
-}
 
 /* End About Page */
 
@@ -435,8 +428,6 @@ td div {
         font-size: 2.5rem;
     }
     #about {
-        background-position: right top;
-        background-size: 70%;
         margin-left: 5rem;
     }
 }
@@ -464,6 +455,18 @@ td div {
 }
 
 @media (min-width: 1500px) {
+    #hero {
+        height: 100vh;
+    }
+    #hero-contents {
+        height: 100%;
+    }
+    #hero-left {
+        margin: 15% 0 auto;
+    }
+    #hero-right {
+        margin: auto;
+    }
     #hero .igaming-span {
         font-size: 7.5rem;
     }
@@ -479,4 +482,24 @@ td div {
     }
 }
 
+@media (min-width: 1700px) {
+    .mobile-navigation ul li {
+        font-size: 1.15rem;
+        padding: 0 25px
+    }
+    .mobile-navigation nav {
+        padding-right: 2.5rem;
+    }
+    #jurisdictions {
+        margin: 6rem 0 8rem;
+    }
+    .jur-content  {
+        padding-left: 3rem;
+    }
+    .jur-img-cont {
+        max-width: 24rem!important;
+        margin-left: 2rem;
+        margin-right: 2.5rem;
+    }
+}
 /* End Media Queries */
