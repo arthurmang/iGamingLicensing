@@ -9,18 +9,6 @@ document.querySelectorAll(".nav-link").forEach(link => {
     });
 });
 
-// const jurNav = document.querySelector('.jur-nav');
-// const jurPanel = document.querySelector('.jur-panel');
-
-// jurNav.addEventListener("mouseenter", () => {
-//   jurPanel.style.display = "inline-block";
-// });
-
-// jurNav.addEventListener("mouseleave", () => {
-//   jurPanel.style.display = "none";
-// });
-
-
 const navbar = document.querySelector(".mobile-nav");
 
 window.addEventListener("scroll", () => {
@@ -39,6 +27,16 @@ window.addEventListener("scroll", () => {
 //     initCheckout(); // your big function
 //   }
 // });
+
+// On page load, check if ?country= is in the URL
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const country = params.get("country");
+
+  if (country) {
+    updateJurisdiction(decodeURIComponent(country));
+  }
+});
 
 const jurisdictions = [
   {
@@ -171,7 +169,7 @@ const jurisdictions = [
     benefits: "Competitive costs, fast processing, flexible structuring."
   },
   {
-    name: "United Arab Emirates",
+    name: "United Arab Emirates (UAE)",
     image: "../img/uae.png",
     description: "A new market aiming to become the Middle Eastern hub for iGaming.",
     services: "B2B Licence (emerging framework)",
@@ -244,7 +242,6 @@ listItems.forEach(li => li.addEventListener("click", () => updateJurisdiction(li
 
 document.querySelectorAll(".jur-panel-list a").forEach(link => {
   link.addEventListener("click", e => {
-    e.preventDefault(); // stop jumping to top of page
 
     const country = link.dataset.country;
     updateJurisdiction(country);

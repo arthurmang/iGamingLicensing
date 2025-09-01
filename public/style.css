@@ -287,6 +287,36 @@ textarea {
 
 /* About Page */
 
+.start-quote::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/start-quote.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.end-quote::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/end-quote.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* End About Page */
 
 /* Jurisdictions Page */
@@ -373,6 +403,14 @@ td div {
 
 /* End Recommendations Page */
 
+/* News Page */
+
+#news article {
+    border-color: #000;
+}
+
+/* End News Page */
+
 /* Media Queries */
 
 @media (min-width: 768px) {
@@ -442,13 +480,18 @@ td div {
     #about {
         margin-left: auto;
     }
+    .about-quote {
+        position: relative;
+        left: 3rem;
+    }
+    .start-quote::before,
+    .end-quote::before {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (min-width: 1400px) {
-    #hero {
-        /* padding-top: 7.5rem; */
-        padding-bottom: 6.5rem;
-    }
     .igaming-span {
         font-size: 6.5rem;
     }
@@ -461,11 +504,13 @@ td div {
     #hero-contents {
         height: 100%;
     }
-    #hero-left {
-        margin: 15% 0 auto;
+    #hero-contents {
+        align-items: center;
+        padding-bottom: 3rem;
     }
-    #hero-right {
+    #hero-left {
         margin: auto;
+        padding-bottom: 5rem;
     }
     #hero .igaming-span {
         font-size: 7.5rem;
@@ -476,9 +521,9 @@ td div {
     #hero h1 {
         font-size: 4.2rem;
     }
-    #hero-left {
-        padding-top: 3rem;
-        width: 50%;
+    .about-quote {
+        position: relative;
+        left: 3rem;
     }
 }
 
@@ -501,5 +546,21 @@ td div {
         margin-left: 2rem;
         margin-right: 2.5rem;
     }
+    .about-quote {
+        left: 5rem;
+    }
+    .start-quote::before,
+    .end-quote::before {
+        width: 120px;
+        height: 120px;
+    }
+    .end-quote::before {
+        top: unset;
+        left: unset;
+        transform: unset;
+        bottom: -50px;
+    }
 }
+
+
 /* End Media Queries */
