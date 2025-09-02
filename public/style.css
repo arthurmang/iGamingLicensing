@@ -560,6 +560,7 @@ td div {
         margin-right: 2.5rem;
     }
     .about-quote {
+        padding-top: 2rem;
         left: 5rem;
     }
     .start-quote::before,
