@@ -78,7 +78,7 @@ textarea {
     color: #1FDAE1;
 }
 
-#about, #recommendations, #jurisdictions {
+#about, #recommendations {
     background-image: url('../img/igaming-bg.svg');
     background-size: 70%;
     background-repeat: no-repeat;
@@ -461,6 +461,12 @@ td div {
         place-self: center;
         padding: 0 15px;
         width: unset;
+    }
+    #jurisdictions {
+        background-image: url('../img/igaming-bg.svg');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center top;
     }
     .jur-nav:hover .jur-panel {
         display: block!important;
