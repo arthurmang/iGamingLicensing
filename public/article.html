@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="iGaming Licensing is a leading consultancy firm specialising in iGaming licensing and regulatory compliance support, delivering tailored B2B and B2C online gaming licence solutions to operators and software suppliers worldwide.">
     <link rel="icon" href="../img/favicon.png" type="image/png">
-    <title>News | iGaming Licensing</title>
+    <title>iGaming Licensing</title>
     
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
@@ -32,13 +32,13 @@
                     </button>
 
                     <nav>
-                        <ul>
+                        <ul class="font-lato">
                             <li><a href="/index" class="nav-link hidden">Home</a></li>
                             <li><a href="/about" class="nav-link">About Us</a></li>
                             <li class="jur-nav relative">
                                 <a href="/jurisdictions" class="nav-link">Jurisdictions</a>
                                 <div class="jur-panel absolute shadow-md" style="display: none;">
-                                    <ul class="jur-panel-list text-sm">
+                                    <ul class="jur-panel-list font-lato text-sm">
                                         <li><a href="./jurisdictions.html?country=Alderney" data-country="Alderney">Alderney</a></li>
                                         <li><a href="./jurisdictions.html?country=Anjouan" data-country="Anjouan">Anjouan</a></li>
                                         <li><a href="./jurisdictions.html?country=Curaçao" data-country="Curaçao">Curaçao</a></li>
@@ -71,73 +71,25 @@
 
     <!-- End Header  -->
 
-    <!-- News Section -->
+    <!-- Article Section -->
+    <main class="max-w-6xl mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">News & Content</h1>
 
-    <section id="news" class="mt-28 pb-20 px-4 max-w-5xl mx-auto xl:mt-32">
-
-        <h2 class=" text-center text-3xl font-bold mb-8 lg:text-left">News & Content</h2>
-
-        <div class="flex flex-col space-y-6 justify-center md:space-y-0 md:grid md:gap-6 md:grid-cols-2 lg:grid-cols-3">
-        
-            <article class="rounded-2xl w-80 mx-auto overflow-hidden border border-black shadow-sm flex flex-col">
-                <img src="../img/article1.png" alt="News 1" class="w-full h-48 object-fill">
-                <div class="p-4 flex flex-col flex-1">
-                    <p class="text-sm mb-2">08/09/2025</p>
-                    <h3 class="font-semibold text-lg mb-2 text-primary">
-                        New iGaming consultancy launches to meet rising demand for ‘cost-effective’ licences
-                    </h3>
-                    <p class="text-sm font-normal mb-4 flex-1">
-                        iGaming Licensing is a new venture from the team behind successful Isle of Man-based regulatory service provider Global Gaming Solutions, which supports clients in acquiring top-tier licences, including in the UK, Isle of Man and Romania.
-                    </p>
-                    <!-- <p class="text-sm font-normal mb-4 flex-1">
-                        A new iGaming consultancy has been launched to meet an increasing demand for ‘cost-effective’ gambling licences.
-                    </p> -->
-                    <button class="primary-button w-40 mx-auto my-2">
-                        Read More
-                    </button>
-                </div>
-            </article>
-
-            <!-- <article class="rounded-2xl w-80 mx-auto overflow-hidden border border-black shadow-sm flex flex-col">
-                <img src="../img/article2.png" alt="News 2" class="w-full h-48 object-cover">
-                <div class="p-4 flex flex-col flex-1">
-                    <p class="text-sm mb-2">28/02/2025</p>
-                    <h3 class="font-semibold text-lg mb-2 text-primary">
-                        The Anjouan Gambling License: Explained
-                    </h3>
-                    <p class="text-sm font-normal mb-4 flex-1">
-                        Our latest article is in partnership with Anjouan Licensing who explain the background 
-                        of Anjouan, the advantages, the regulatory framework, application process and future outlook...
-                    </p>
-                    <button class="primary-button w-40 mx-auto my-2">
-                        Read More
-                    </button>
-                </div>
-            </article>
-
-            <article class="rounded-2xl w-80 mx-auto overflow-hidden border border-black shadow-sm flex flex-col">
-                <img src="../img/article3.png" alt="News 3" class="w-full h-48 object-cover">
-                <div class="p-4 flex flex-col flex-1">
-                    <p class="text-sm mb-2">28/08/2025</p>
-                    <h3 class="font-semibold text-lg mb-2 text-primary">
-                        Applying for an Isle of Man Full Licence (B2C)
-                    </h3>
-                    <p class="text-sm font-normal mb-4 flex-1">
-                        The Isle of Man has cemented its reputation as a distinguished jurisdiction for the 
-                        eGaming industry, attributing its prestigious standing to a confluence of factors 
-                        that underscore its repute. This discourse...
-                    </p>
-                    <button class="primary-button w-40 mx-auto my-2">
-                        Read More
-                    </button>
-                </div>
-            </article> -->
-
+        <!-- Article Grid -->
+        <div id="articles" class="grid md:grid-cols-3 gap-6">
+        <!-- Articles will be injected here by JS -->
         </div>
 
-    </section>
+        <!-- Article View (hidden by default) -->
+        <div id="articleView" class="hidden">
+        <button id="backBtn" class="mb-4 px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700">← Back</button>
+        <h2 id="articleTitle" class="text-2xl font-bold mb-2"></h2>
+        <p id="articleDate" class="mb-4"></p>
+        <div id="articleContent" class="prose max-w-none"></div>
+        </div>
+    </main>
 
-    <!-- End News Section -->
+    <!-- End Article Section -->
 
     <!-- Contact Section -->
 
@@ -243,3 +195,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
