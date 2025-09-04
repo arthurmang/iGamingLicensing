@@ -5,6 +5,11 @@
   },
   "routes": [
     {
+      "route": "/index",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
       "route": "/:page",
       "rewrite": "/:page.html"
     }
