@@ -86,6 +86,7 @@ textarea {
     background-position: center top;
 }
 
+
 /* Hamburger Nav */
 
 .mobile-nav {
@@ -480,7 +481,10 @@ td div {
     }
     #about {
         margin-left: 5rem;
-    }
+    }    
+    /* .w-38 {
+        width: 150px;
+    } */
 }
 
 @media (min-width: 1200px) {
