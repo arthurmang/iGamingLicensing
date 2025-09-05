@@ -231,42 +231,6 @@ const benefitsEl = document.getElementById("jurisdiction-benefits");
 const menuToggle = document.getElementById("menu-toggle");
 const sidebar = document.getElementById("sidebar");
 
-// Update UI
-function updateJurisdiction(countryName) {
-  const j = jurisdictions.find(x => x.name === countryName);
-  if (!j) return;
-
-  nameEl.textContent = j.name;
-  imageEl.src = j.image;
-  imageEl.alt = j.name;
-
-  // Helper: set content or hide parent if empty
-  function setContent(el, content) {
-    if (content && content.trim() !== "") {
-      el.textContent = content;
-      el.parentElement.style.display = ""; // show (reset to default)
-    } else {
-      el.parentElement.style.display = "none"; // hide the whole block
-    }
-  }
-
-  setContent(descEl, j.description);
-  setContent(servicesEl, j.services);
-  setContent(regulatorEl, j.regulator);
-  setContent(feesEl, j.fees);
-  setContent(recommendationsEl, j.recommendations);
-  setContent(importantEl, j.important);
-  setContent(benefitsEl, j.benefits);
-
-  // Highlight active item
-  listItems.forEach(li => li.classList.remove("text-primary", "active"));
-  const active = Array.from(listItems).find(li => li.dataset.country === countryName);
-  if (active) active.classList.add("text-primary", "active");
-}
-
-// Click handlers
-listItems.forEach(li => li.addEventListener("click", () => updateJurisdiction(li.dataset.country)));
-
 document.querySelectorAll(".jur-panel-list a").forEach(link => {
   link.addEventListener("click", e => {
 
@@ -275,12 +239,80 @@ document.querySelectorAll(".jur-panel-list a").forEach(link => {
   });
 });
 
-// Mobile toggle
-menuToggle.addEventListener("click", () => {
-  sidebar.classList.toggle("hidden");
+const jurisdictionsPage = document.querySelector('#jurisdictions');
+
+if (jurisdictionsPage) {
+  
+  // Mobile toggle
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("hidden");
+  });
+
+  
+  // Update UI
+  function updateJurisdiction(countryName) {
+    const j = jurisdictions.find(x => x.name === countryName);
+    if (!j) return;
+
+    nameEl.textContent = j.name;
+    imageEl.src = j.image;
+    imageEl.alt = j.name;
+
+    // Helper: set content or hide parent if empty
+    function setContent(el, content) {
+      if (content && content.trim() !== "") {
+        el.textContent = content;
+        el.parentElement.style.display = ""; // show (reset to default)
+      } else {
+        el.parentElement.style.display = "none"; // hide the whole block
+      }
+    }
+
+    setContent(descEl, j.description);
+    setContent(servicesEl, j.services);
+    setContent(regulatorEl, j.regulator);
+    setContent(feesEl, j.fees);
+    setContent(recommendationsEl, j.recommendations);
+    setContent(importantEl, j.important);
+    setContent(benefitsEl, j.benefits);
+
+    // Highlight active item
+    listItems.forEach(li => li.classList.remove("text-primary", "active"));
+    const active = Array.from(listItems).find(li => li.dataset.country === countryName);
+    if (active) active.classList.add("text-primary", "active");
+  }
+
+  // Click handlers
+  listItems.forEach(li => li.addEventListener("click", () => updateJurisdiction(li.dataset.country)));
+
+  // Load default (matches your screenshot)
+  updateJurisdiction("Alderney");
+
+
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // collect form values
+    const params = {
+      name: document.getElementById("contact-name").value,
+      email: document.getElementById("contact-email").value,
+      jurisdiction: document.getElementById("jurisdiction-select").value,
+      information: document.getElementById("contact-msg").value,
+    };
+
+    emailjs.send("service_3b74qjm", "template_hj6h9ul", params)
+      .then(function(response) {
+        alert("✅ Message sent successfully!");
+        form.reset();
+      }, function(error) {
+        alert("❌ Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      });
+  });
 });
-
-// Load default (matches your screenshot)
-updateJurisdiction("Alderney");
-
-
