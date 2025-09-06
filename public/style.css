@@ -584,5 +584,11 @@ td div {
     }
 }
 
+@media (min-width: 1920px) {
+    .about-quote {
+        left: 7rem;
+        top: 1.5rem;
+    }
+}
 
 /* End Media Queries */

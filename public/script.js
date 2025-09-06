@@ -90,7 +90,7 @@ const jurisdictions = [
     name: "Anjouan",
     image: "../img/anjouan.png",
     description: "A growing and cost-effective jurisdiction, attracting both start-ups and some of the industry’s largest brands. With more than 1,000 licences issued, Anjouan has established itself as a recognised name in the iGaming sector.",
-    services: "B2B Licence / B2C Licence / Recognition",
+    services: "B2B Licence / B2C Licence / Recognition Notice.",
     regulator: "Anjouan Offshore Finance Authority",
     fees: "Indicative government/licence fees: ~€17,000.",
     recommendations: "Anjouan is well-suited to businesses seeking a low-cost entry into the iGaming market.",
@@ -124,7 +124,7 @@ const jurisdictions = [
     image: "../img/kahnawake.png",
     description: "Kahnawake is a long-standing jurisdiction with international recognition dating back to the 1990s. It offers operators and software providers flexibility, with many businesses attracted by its competitive licensing framework, low annual fees and the absence of local corporate substance requirements, all of which underpin its reputation as a credible jurisdiction.",
     services: "B2B Licence / B2C Licence",
-    regulator: "Kahnawàke Gaming Commission (KGC)",
+    regulator: "Kahnawake Gaming Commission (KGC)",
     fees: "$40,000.00 (Application Fee), $20,000.00 (B2B/B2C Annual Licence Fee)",
     recommendations: "We recommend establishing your corporate structure in a Tier One jurisdiction to maximise opportunities for banking and payment solutions.",
     important: "No local corporate substance requirements.",
@@ -159,7 +159,7 @@ const jurisdictions = [
     services: "B2B Licence (Gaming-Related Supplier / Manufacturer)",
     regulator: "Alcohol and Gaming Commission of Ontario (AGCO)",
     fees: "C$3,000.00 annual (supplier), C$15,000.00 annual (manufacturer).",
-    recommendation: "Consider applying for an Ontario licence from a tax-efficient reputable jurisdiction.",
+    recommendations: "Consider applying for an Ontario licence from a tax-efficient reputable jurisdiction.",
     important: "In its third year of regulation (April 2024–March 2025), Ontario’s iGaming market generated CA$3.20 billion in gross gaming revenue (GGR) — a 32% increase on the previous year. It is a market that operators and software providers cannot afford to overlook.",
     benefits: "Access a highly attractive market with strong revenue potential."
   },
@@ -170,7 +170,7 @@ const jurisdictions = [
     services: "B2B Licence and B2C Licence (applications under the GRA to be accepted late 2025)",
     regulator: "Gambling Regulatory Authority of Ireland (GRAI)",
     fees: "Proposals have been published, but final fees are yet to be confirmed.",
-    recommendation: "Our recommendations will be published following the issuance of licences.",
+    recommendations: "Our recommendations will be published following the issuance of licences.",
     important: "Ireland’s gambling revenue is set to hit €2.5 billion in 2025, with online gambling growing fast. Strong demand is evident even before official online casino figures are published.",
     benefits: "Access a highly attractive market with strong revenue potential."
   },
@@ -181,7 +181,7 @@ const jurisdictions = [
     services: "Class II Licence (B2B)",
     regulator: "National Gambling Office (ONJN)",
     fees: "€20,000.00 annual licence and €15,000.00 responsible gaming contribution.",
-    recommendation: "For software providers wishing to supply both Romanian operators and MGA-licensed operators, the Class II (B2B) Licence offers a strong foundation and can be used to obtain an MGA Recognition Notice.",
+    recommendations: "For software providers wishing to supply both Romanian operators and MGA-licensed operators, the Class II (B2B) Licence offers a strong foundation and can be used to obtain an MGA Recognition Notice.",
     important: "All documentation must be submitted to the ONJN in Romanian.",
     benefits: "Recognised as a Tier One licence, with the ability to obtain an MGA Recognition Notice."
   },
@@ -192,7 +192,7 @@ const jurisdictions = [
     services: "B2B Licence and B2C Licence",
     regulator: "Tobique Gaming Commission",
     fees: "Application Fee €18,000.00, Annual Licence Fee €18,000.00.",
-    recommendation: "We recommend establishing your corporate structure in a Tier One jurisdiction to maximise opportunities for banking and payment solutions.",
+    recommendations: "We recommend establishing your corporate structure in a Tier One jurisdiction to maximise opportunities for banking and payment solutions.",
     important: "Licensing can typically be completed within six to eight weeks, making it one of the quicker processes for obtaining a licence.",
     benefits: "Tobique is gaining credibility as a recognised licence, offering corporate flexibility and low taxation."
   },
@@ -203,7 +203,7 @@ const jurisdictions = [
     services: "Gaming-Related Vendor Licence, Internet Gaming Licence (coming soon)",
     regulator: "General Commercial Gaming Regulatory Authority (GCGRA)",
     fees: "Determined by GCGRA based on the licence type.",
-    recommendation: "With the UAE expected to emerge as a major hub for online gambling, operators and software providers should position themselves early to secure a valuable first-mover advantage. Software providers facing international markets should consider establishing an entity within a UAE free zone.",
+    recommendations: "With the UAE expected to emerge as a major hub for online gambling, operators and software providers should position themselves early to secure a valuable first-mover advantage. Software providers facing international markets should consider establishing an entity within a UAE free zone.",
     benefits: "Early-mover advantage in a strategic market."
   },
   {
@@ -213,7 +213,7 @@ const jurisdictions = [
     services: "B2B Licence (Remote Gambling Software)",
     regulator: "United Kingdom Gambling Commission",
     fees: "Licence fees are calculated on a revenue basis.",
-    recommendation: "Consider applying for a UK licence from a tax-efficient reputable jurisdiction.",
+    recommendations: "Consider applying for a UK licence from a tax-efficient reputable jurisdiction.",
     important: "The UK is one of the world’s largest regulated iGaming markets, generating more than £10 billion in annual gross gambling yield (GGY). With its mature framework, high player engagement and global credibility, it is a market that operators and software providers cannot afford to overlook.",
     benefits: "Access a highly attractive market with strong revenue potential."
   }
