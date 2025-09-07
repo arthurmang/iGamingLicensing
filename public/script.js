@@ -80,8 +80,8 @@ const jurisdictions = [
     image: "../img/alderney.png",
     description: "Alderney is one of the longest-standing names in online gambling, often chosen by operators and software providers for its strong credibility. Its Tier One reputation makes it a trusted choice for partnerships.",
     services: "B2B Certificate (Category 2)",
-    regulator: "Alderney Gambling Control Commission (AGCC)",
-    fees: "Category 2: £50,000 per annum",
+    regulator: "Alderney Gambling Control Commission (AGCC).",
+    fees: "Category 2: £50,000 per annum.",
     recommendations: "Alderney offers a reputable licence for software providers seeking Tier One status.",
     important: "Software providers applying for the B2B Certificate(Category 2) must operate their own platform. For software resellers without aproprietary platform, this licence is not applicable.",
     benefits: "Tier One status; no gaming duty, no VAT (for Alderney-based companies)."
@@ -90,8 +90,8 @@ const jurisdictions = [
     name: "Anjouan",
     image: "../img/anjouan.png",
     description: "A growing and cost-effective jurisdiction, attracting both start-ups and some of the industry’s largest brands. With more than 1,000 licences issued, Anjouan has established itself as a recognised name in the iGaming sector.",
-    services: "B2B Licence / B2C Licence / Recognition Notice.",
-    regulator: "Anjouan Offshore Finance Authority",
+    services: "B2B Licence / B2C Licence / Recognition Notice",
+    regulator: "Anjouan Offshore Finance Authority.",
     fees: "Indicative government/licence fees: ~€17,000.",
     recommendations: "Anjouan is well-suited to businesses seeking a low-cost entry into the iGaming market.",
     important: "Banking and payment solutions can be challenging. A common approach is to establish a payment agent entity within the EU.",
@@ -102,8 +102,8 @@ const jurisdictions = [
     image: "../img/curacao.png",
     description: "A long-standing and respected iGaming jurisdiction, Curaçao has been a major hub for operators worldwide. Today, it continues to strengthen its position through significant regulatory reforms designed to bring it even closer in line with Tier One standards.",
     services: "B2B Licence / B2C Licence",
-    regulator: "Curaçao Gaming Control Board (GCB)",
-    fees: "B2C - ~€48,000.00, B2B ~€24,600.00",
+    regulator: "Curaçao Gaming Control Board (GCB).",
+    fees: "B2C - ~€48,000.00, B2B ~€24,600.00.",
     recommendations: "Curaçao is suitable for businesses that are seeking a reputable licence with comparatively lighter regulatory oversight and less stringent enforcement than Tier One jurisdictions.",
     important: "Under Curaçao’s new regulatory reforms, licence holders face more stringent substance requirements, which in turn increase the overall cost of doing business in the jurisdiction.",
     benefits: "A reputable jurisdiction with low taxation."
@@ -113,7 +113,7 @@ const jurisdictions = [
     image: "../img/isleofman.png",
     description: "The Isle of Man is a Tier One heavyweight, attracting leading operators and software suppliers. Software suppliers can choose to establish an Isle of Man entity without obtaining a licence, taking advantage of the island’s low taxation, supportive iGaming infrastructure and access to local banking.",
     services: "Software Supplier Licence / Full Licence / Network Licence / Non-regulated Entity",
-    regulator: "Isle of Man Gambling Supervision Commission (GSC)",
+    regulator: "Isle of Man Gambling Supervision Commission (GSC).",
     fees: "£36,750.00 (Software Supplier and Full), £55,000.00 (Network Licence).",
     recommendations: "The Software Supplier Licence is essential for aggregators, while the Full Licence provides significant credibility and maximises access to banking and payment solutions. For software providers, establishing a non-licensed entity in the Isle of Man can be an attractive option to distribute content without a gaming licence, while benefiting from the island’s 0% corporate tax rate.",
     important: "An Isle of Man entity is required, along with the appointment of two Resident Directors.",
@@ -124,8 +124,8 @@ const jurisdictions = [
     image: "../img/kahnawake.png",
     description: "Kahnawake is a long-standing jurisdiction with international recognition dating back to the 1990s. It offers operators and software providers flexibility, with many businesses attracted by its competitive licensing framework, low annual fees and the absence of local corporate substance requirements, all of which underpin its reputation as a credible jurisdiction.",
     services: "B2B Licence / B2C Licence",
-    regulator: "Kahnawake Gaming Commission (KGC)",
-    fees: "$40,000.00 (Application Fee), $20,000.00 (B2B/B2C Annual Licence Fee)",
+    regulator: "Kahnawake Gaming Commission (KGC).",
+    fees: "$40,000.00 (Application Fee), $20,000.00 (B2B/B2C Annual Licence Fee).",
     recommendations: "We recommend establishing your corporate structure in a Tier One jurisdiction to maximise opportunities for banking and payment solutions.",
     important: "No local corporate substance requirements.",
     benefits: "Reputable and flexible; apply from most jurisdictions."
@@ -135,7 +135,7 @@ const jurisdictions = [
     image: "../img/malta.png",
     description: "Malta is a premier Tier One jurisdiction, attracting established operators and leading software suppliers. As part of the EU, it serves as a hub for European-facing businesses, offering one of the lowest taxation regimes in the European Union, making it a highly attractive place to do business.",
     services: "B2B Licence / B2C Licence / Recognition Notice",
-    regulator: "Malta Gaming Authority (MGA)",
+    regulator: "Malta Gaming Authority (MGA).",
     fees: 'MGA Licensing fees can be found <a href="https://www.mga.org.mt/app/uploads/Guidance-Note-Licence-Fees-and-Taxation-1.pdf" target="_blank">here.</a>',
     recommendations: "The B2C licence carries high credibility and is particularly well-suited to operators targeting jurisdictions within the EU. For software suppliers, the B2B licence and recognition notice represent a strong choice, given the large concentration of B2C operators based in Malta.",
     important: "The MGA Recognition Notice may be obtained by EU entities, not solely those established in Malta.",
@@ -146,8 +146,8 @@ const jurisdictions = [
     image: "../img/nevis.png",
     description: "In 2025, Nevis introduced new gaming legislation to establish itself as a reputable jurisdiction within the iGaming sector. With clear ambitions to benchmark against the Isle of Man and Malta, Nevis has positioned itself as an emerging Tier One jurisdiction.",
     services: "B2B Licence / B2C Licence",
-    regulator: "Nevis Island Administration",
-    fees: "€28,000.00 (B2B/B2C)",
+    regulator: "Nevis Island Administration.",
+    fees: "€28,000.00 (B2B/B2C).",
     recommendations: "While Nevis has positioned itself as a Tier One jurisdiction, it may take time for banks, payment providers and other service providers to familiarise themselves with its AML/CFT requirements. Our recommendation is to establish an entity in a Tier One jurisdiction and apply for the Nevis Gaming Licence to maximise the credibility of the business for banks, payment providers and service providers.",
     important: "Banking and payment solutions are likely to prove challenging following the introduction of the new gaming legislation. We recommend establishing a payment agent within the EU to help mitigate these difficulties.",
     benefits: "A licence can be obtained quickly under the new process."
@@ -157,7 +157,7 @@ const jurisdictions = [
     image: "../img/ontario.png",
     description: "In 2022, Ontario launched its regulated iGaming market. By 2025, with a population exceeding 16 million, it had become not only Canada’s most populous province but also one of the country’s leading regulated iGaming markets.",
     services: "B2B Licence (Gaming-Related Supplier / Manufacturer)",
-    regulator: "Alcohol and Gaming Commission of Ontario (AGCO)",
+    regulator: "Alcohol and Gaming Commission of Ontario (AGCO).",
     fees: "C$3,000.00 annual (supplier), C$15,000.00 annual (manufacturer).",
     recommendations: "Consider applying for an Ontario licence from a tax-efficient reputable jurisdiction.",
     important: "In its third year of regulation (April 2024–March 2025), Ontario’s iGaming market generated CA$3.20 billion in gross gaming revenue (GGR) — a 32% increase on the previous year. It is a market that operators and software providers cannot afford to overlook.",
@@ -168,7 +168,7 @@ const jurisdictions = [
     image: "../img/repofireland.png",
     description: "The Republic of Ireland has historically regulated online sports betting under the Betting (Amendment) Act 2015, which requires all remote bookmakers to be licensed and taxed by the Irish authorities. However, under the Gambling Regulation Act 2024 (“GRA”), Ireland is moving to establish a unified system that will, for the first time, bring online casino operators into a regulated environment alongside the already licensed sportsbook sector.",
     services: "B2B Licence and B2C Licence (applications under the GRA to be accepted late 2025)",
-    regulator: "Gambling Regulatory Authority of Ireland (GRAI)",
+    regulator: "Gambling Regulatory Authority of Ireland (GRAI).",
     fees: "Proposals have been published, but final fees are yet to be confirmed.",
     recommendations: "Our recommendations will be published following the issuance of licences.",
     important: "Ireland’s gambling revenue is set to hit €2.5 billion in 2025, with online gambling growing fast. Strong demand is evident even before official online casino figures are published.",
@@ -179,7 +179,7 @@ const jurisdictions = [
     image: "../img/romania.png",
     description: "Romania operates a fully regulated gambling market under the National Gambling Office (ONJN). The Class II (B2B) licence is available to software providers and serves as a strong foundation for growth, offering the credibility of an EU-issued licence.",
     services: "Class II Licence (B2B)",
-    regulator: "National Gambling Office (ONJN)",
+    regulator: "National Gambling Office (ONJN).",
     fees: "€20,000.00 annual licence and €15,000.00 responsible gaming contribution.",
     recommendations: "For software providers wishing to supply both Romanian operators and MGA-licensed operators, the Class II (B2B) Licence offers a strong foundation and can be used to obtain an MGA Recognition Notice.",
     important: "All documentation must be submitted to the ONJN in Romanian.",
@@ -190,7 +190,7 @@ const jurisdictions = [
     image: "../img/tobique.png",
     description: "Tobique is a relatively new jurisdiction in the iGaming world, but continues to build a strong presence. Its framework, overseen by the Tobique Gaming Commission, offers licences to both operators and software providers, providing a solid foundation for growth and credibility in international markets.",
     services: "B2B Licence and B2C Licence",
-    regulator: "Tobique Gaming Commission",
+    regulator: "Tobique Gaming Commission.",
     fees: "Application Fee €18,000.00, Annual Licence Fee €18,000.00.",
     recommendations: "We recommend establishing your corporate structure in a Tier One jurisdiction to maximise opportunities for banking and payment solutions.",
     important: "Licensing can typically be completed within six to eight weeks, making it one of the quicker processes for obtaining a licence.",
@@ -201,7 +201,7 @@ const jurisdictions = [
     image: "../img/uae.png",
     description: "The UAE has taken its first steps into iGaming regulation with the creation of the General Commercial Gaming Regulatory Authority (GCGRA). This new regulator has already begun licensing activity, signalling the emergence of a potentially major online market in the Gulf region.",
     services: "Gaming-Related Vendor Licence, Internet Gaming Licence (coming soon)",
-    regulator: "General Commercial Gaming Regulatory Authority (GCGRA)",
+    regulator: "General Commercial Gaming Regulatory Authority (GCGRA).",
     fees: "Determined by GCGRA based on the licence type.",
     recommendations: "With the UAE expected to emerge as a major hub for online gambling, operators and software providers should position themselves early to secure a valuable first-mover advantage. Software providers facing international markets should consider establishing an entity within a UAE free zone.",
     benefits: "Early-mover advantage in a strategic market."
@@ -211,7 +211,7 @@ const jurisdictions = [
     image: "../img/uk.png",
     description: "The United Kingdom is a mature iGaming mark. With a population of over 67 million, it remains one of the world’s most established and influential regulated iGaming jurisdictions.",
     services: "B2B Licence (Remote Gambling Software)",
-    regulator: "United Kingdom Gambling Commission",
+    regulator: "United Kingdom Gambling Commission.",
     fees: "Licence fees are calculated on a revenue basis.",
     recommendations: "Consider applying for a UK licence from a tax-efficient reputable jurisdiction.",
     important: "The UK is one of the world’s largest regulated iGaming markets, generating more than £10 billion in annual gross gambling yield (GGY). With its mature framework, high player engagement and global credibility, it is a market that operators and software providers cannot afford to overlook.",
@@ -264,19 +264,23 @@ if (jurisdictionsPage) {
     imageEl.alt = j.name;
 
     // Helper: set content or hide parent if empty
-    function setContent(el, content) {
+    function setContent(el, content, allowHTML = false) {
       if (content && content.trim() !== "") {
-        el.textContent = content;
-        el.parentElement.style.display = ""; // show (reset to default)
+        if (allowHTML) {
+          el.innerHTML = content;   // render HTML
+        } else {
+          el.textContent = content; // safe plain text
+        }
+        el.parentElement.style.display = ""; // show
       } else {
-        el.parentElement.style.display = "none"; // hide the whole block
+        el.parentElement.style.display = "none"; // hide block
       }
     }
 
     setContent(descEl, j.description);
     setContent(servicesEl, j.services);
     setContent(regulatorEl, j.regulator);
-    setContent(feesEl, j.fees);
+    setContent(feesEl, j.fees, true); 
     setContent(recommendationsEl, j.recommendations);
     setContent(importantEl, j.important);
     setContent(benefitsEl, j.benefits);

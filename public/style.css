@@ -566,6 +566,7 @@ td div {
     }
     .about-quote {
         padding-top: 2rem;
+        top: 1.5rem;
         left: 5rem;
     }
     .start-quote::before,
@@ -584,10 +585,10 @@ td div {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1850px) {
     .about-quote {
         left: 7rem;
-        top: 1.5rem;
+        top: 2.5rem;
     }
 }
 
