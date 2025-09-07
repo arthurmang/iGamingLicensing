@@ -500,6 +500,7 @@ td div {
     .about-quote {
         position: relative;
         left: 3rem;
+        top: 3rem;
     }
     .start-quote::before,
     .end-quote::before {
@@ -565,8 +566,6 @@ td div {
         margin-right: 2.5rem;
     }
     .about-quote {
-        padding-top: 2rem;
-        top: 1.5rem;
         left: 5rem;
     }
     .start-quote::before,
