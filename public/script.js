@@ -232,9 +232,7 @@ const recommendationsEl = document.getElementById("jurisdiction-recommendations"
 const importantEl = document.getElementById("jurisdiction-important");
 const benefitsEl = document.getElementById("jurisdiction-benefits");
 
-// Mobile controls
-const menuToggle = document.getElementById("menu-toggle");
-const sidebar = document.getElementById("sidebar");
+
 
 document.querySelectorAll(".jur-panel-list a").forEach(link => {
   link.addEventListener("click", e => {
@@ -248,6 +246,10 @@ const jurisdictionsPage = document.querySelector('#jurisdictions');
 
 if (jurisdictionsPage) {
   
+  // Mobile controls
+const menuToggle = document.getElementById("menu-toggle");
+const sidebar = document.getElementById("sidebar");
+
   // Mobile toggle
   menuToggle.addEventListener("click", () => {
     sidebar.classList.toggle("hidden");
