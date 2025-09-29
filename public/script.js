@@ -308,19 +308,36 @@ const sidebar = document.getElementById("sidebar");
 }
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // collect form values
-    const params = {
-      name: document.getElementById("contact-name").value,
-      email: document.getElementById("contact-email").value,
-      jurisdiction: document.getElementById("jurisdiction-select").value,
-      information: document.getElementById("contact-msg").value,
-    };
+    const name = document.getElementById("contact-name").value.trim();
+    const email = document.getElementById("contact-email").value.trim();
+    const jurisdiction = document.getElementById("jurisdiction-select").value;
+    const information = document.getElementById("contact-msg").value.trim();
+
+    
+    if (!name) {
+      alert("Please enter your name.");
+      return;
+    }
+
+    if (!email) {
+      alert("Please enter your email.");
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    const params = { name, email, jurisdiction, information };
 
     emailjs.send("service_3b74qjm", "template_hj6h9ul", params)
       .then(function(response) {
@@ -332,3 +349,5 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+
