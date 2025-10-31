@@ -23,6 +23,19 @@ label {
     font-weight: 600;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #23C9CF inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
 input, select {
     color: #000;
     padding: 5px 7px;
@@ -106,6 +119,11 @@ textarea {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
+.mobile-nav > div:first-child {
+    position: relative;
+    z-index: 999;
+}
+
 .mobile-navigation {
     position: fixed;
     right: -100%;
@@ -114,7 +132,7 @@ textarea {
     background-color: #FFF;
     transition: 0.5s;
     padding-top: 3.5rem;
-    z-index: 1000;
+    z-index: 998;
 }
 
 .mobile-navigation ul li {
@@ -222,7 +240,7 @@ textarea {
 /* Hero Section */
 
 #hero {
-    background-image: url('../img/homepage-bg.webp');
+    background-image: url('../img/home-bg.webp');
     background-size: cover;
     background-position: center;
 }
@@ -354,7 +372,7 @@ textarea {
 /* Recommendations Page */
 
 tr, th, td {
-    border: 1px solid rgb(229, 231, 235);
+    border: 2px solid rgb(229, 231, 235);
     align-content: flex-start;
 }
 
